@@ -7,7 +7,8 @@ use Illuminate\Support\Facades\File;
     class Post{
 
         public static function all(){
-            return File::files(resource_path("posts/{$slug}.html"))
+           // return "abv";               
+           return File::files(resource_path("posts/"));
         }
 
         public static function find($slug){

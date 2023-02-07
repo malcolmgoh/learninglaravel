@@ -4,7 +4,7 @@
 
 <body>
     <article>
-    <?= $post; ?>
+        
 
     </article>
 

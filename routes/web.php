@@ -15,15 +15,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    
+    //dd(Post::all());
     return view('posts', [
         'posts'=>Post::all()
-    ]);
+    ]); 
 });
 
  
 Route::get('posts/{post}',function($slug){
-
+    //dd("sds");
     $post = Post::find($slug);
 
     return view('post',[

@@ -3,12 +3,13 @@
 <link rel="stylesheet" href="/app.css">
 
 <body>
-    <?php foreach ($posts as $post) :?>
+    <?php foreach ($posts as $post) : ?>
     <article>
-        
-
+        <?= $post; ?>
     </article>
-<?php endforeach; ?>
+
+    <?php endforeach; ?>
+
 </body>
 
 
